@@ -87,11 +87,13 @@ h6 {
 
 h2 {
   font-size: 30px;
+  color: #000000;
   margin: 0 0 30px;
 }
 
 h3 {
   font-size: 13px;
+  color: #000000;
   letter-spacing: 1px;
   margin: 0 0 5px;
 }
