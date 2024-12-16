@@ -78,11 +78,11 @@ h3,
 h4,
 h5,
 h6 {
-  font: 700 40px/1.2 Raleway, sans-serif;
+  font: 700 35px/1.2 Raleway, sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin: 5px 0 5px;
-  color: #222;
+  color: #fffbfb;
 }
 
 h2 {
@@ -238,67 +238,52 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .pfblock {
-  padding: 80px 0 100px;
+  padding: 40px 0;
 }
 
-.pfblock-gray {
-  background: #f5f5f5;
-}
-
-.pfblock-image {
-  padding: 0;
-}
-
-.calltoaction h1,
-.calltoaction h2,
-.calltoaction h3,
-.calltoaction h4,
-.calltoaction h5,
-.calltoaction h6,
-.pfblock-image,
-.pfblock-image h1,
-.pfblock-image h2,
-.pfblock-image h3,
-.pfblock-image h4,
-.pfblock-image h5,
-.pfblock-image h6 {
-  color: #fff;
-}
-
-.pfblock-header {
+.pfblock-header h2 {
   text-align: center;
-  margin: 0 0 40px;
+  margin-bottom: 40px;
 }
 
-.pfblock-header-left {
-  text-align: left;
+/* Custom Card Styles */
+.custom-card {
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden; /* Ensures image stays within card boundaries */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.pfblock-header-left .pfblock-line {
-  width: inherit;
-  margin: 30px 0;
+.custom-card:hover {
+  transform: translateY(-5px); /* Moves the card slightly up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow */
 }
 
-.pfblock-title {
-  font-weight: 800;
+.card-img img {
+  width: 100%;
+  height: 200px; /* Maintain a consistent image height */
+  object-fit: cover; /* Ensures image covers the area */
+  transition: transform 0.3s ease;
 }
 
-.pfblock-subtitle {
-  font-family: Raleway, "Times New Roman", Times, sans-serif;
-  font-style: normal;
-  font-size: 18px;
+.custom-card:hover .card-img img {
+  transform: scale(1.1);
 }
 
-.pfblock-line {
-  background: rgba(135, 135, 135, 0.5);
-  width: 100px;
-  height: 1px;
-  margin: 30px auto;
+.card-content {
+  padding: 15px;
 }
 
-.pfblock-icon {
-  font-size: 32px;
+/* Responsive Design */
+@media (min-width: 768px) {
+  .col-sm-4 {
+    width: 33.33%; /* 3 cards per row on medium screens and larger */
+  }
 }
+
 .calltoaction * {
   text-align: center;
 }
